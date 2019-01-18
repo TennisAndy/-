@@ -1,0 +1,9 @@
+/* miniprogram/pages/splash/splash.wxss */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  transition: all 300ms ease;
+}
+
+

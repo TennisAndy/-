@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<!-- 用户登录测试 -->
+<view class="logoinfo">
+
+  <image class="app-logo" src="./logo.png"></image>
+
+  <form class="form-view" report-submit='true' bindsubmit="login">
+    <view class="container-account">
+      
+      <view class="item-group">
+        <input class="cellphone" type="number" bindinput="inputCellphone" placeholder="输入手机号码" value="{{account.cellphone}}" auto-focus/>
+      </view>
+
+      <view class="item-group">
+        <input class="cellphone" type="password" bindinput="inputPassword" placeholder="输入密码" value="{{account.password}}"/>
+      </view>
+      <button class="btn-login" type='primary' formType="submit">{{logged ? '已登录' : '点击登录'}}</button>
+    </view>
+  </form>
+
+  <view class="bottom-view">
+    <text class="action-text">注册用户</text>
+    <text class="action-text">找回密码</text>
+  </view>
+
+</view>

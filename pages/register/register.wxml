@@ -1,0 +1,18 @@
+<!--miniprogram/pages/register/register.wxml-->
+<view class="container">
+  <image class="app-logo" src="./../login/logo.png"></image>
+  <view class="item-group">
+    <input class="cellphone" type="number" bindinput="inputCellphone" placeholder="输入手机号码" value="{{cellphone}}" auto-focus/>
+  </view>
+
+  <view class="item-group">
+    <input class="cellphone" type="number" bindinput="inputSmscode" placeholder="输入验证码" />
+    <button class="send" size="mini" type="primary" plain="false" disabled="{{sendDisable}}" bindtap='onClickSend'>{{send}}</button>
+  </view>
+
+  <view class="item-group">
+    <input class="cellphone" type="password" bindinput="inputPassword" placeholder="输入登陆密码" value="{{password}}"/>
+  </view>
+
+  <button class="button" type="primary" size="default" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">{{action}}</button>
+</view>

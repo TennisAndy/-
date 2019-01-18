@@ -1,0 +1,3 @@
+<!--miniprogram/pages/splash/splash.wxml-->
+<!-- 用户登录测试 -->
+<image class="container" src = './splash.jpg'/>

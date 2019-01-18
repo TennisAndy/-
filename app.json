@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#cccccc",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "插件测试",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "myPlugin": {
+      "version": "1.0.0",
+      "provider": "wxa76af7d988db7838"
+    }
+  },
+  "usingComponents": {
+    "inputBox": "plugin://myPlugin/inputBox",
+    "multiSelector": "plugin://myPlugin/multiSelector"
+  }
+}

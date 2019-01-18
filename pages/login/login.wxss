@@ -1,0 +1,88 @@
+/* pages/login/login.wxss */
+
+.logoinfo {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.userinfo {
+  margin-top: 75rpx;
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-logo {
+  margin-top: 128rpx;
+  width: 192rpx;
+  height: 192rpx;
+}
+
+.form-view{
+  width: 70%; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.container-account {
+  margin-top: 10rpx;
+  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.item-group {
+  margin-top: 40rpx;
+  height: 72rpx;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.cellphone{
+  flex: 3;
+  margin-left: 32rpx;
+}
+
+.btn-login{
+  margin-top: 40rpx;
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  border-radius: 98rpx; 
+}
+
+.bottom-view{
+  margin-top: 40rpx;
+
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-text{
+  font-size: 28rpx;
+  color: gray;
+}
+
+

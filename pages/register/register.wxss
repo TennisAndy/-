@@ -1,0 +1,42 @@
+/* miniprogram/pages/register/register.wxss */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-logo {
+  margin-top: 128rpx;
+  width: 192rpx;
+  height: 192rpx;
+}
+
+.item-group {
+  margin-top: 40rpx;
+  height: 100rpx;
+  width: 70%; 
+  background: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.cellphone{
+  flex: 3;
+  margin-left: 32rpx;
+}
+
+.send{
+  flex: 1;
+  margin-right: 32rpx;
+}
+
+.button{
+    margin-top: 40rpx;
+    width: 70%;
+}
