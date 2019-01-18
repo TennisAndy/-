@@ -136,3 +136,8 @@ var plugin = requirePlugin("myPlugin")
     })
   }
 ```
+***
+## 四. 插件UI预览
+![链接](./plug_user.png)
+![链接](./plug_lockList.png)
+![链接](./plug_openLock.png)
