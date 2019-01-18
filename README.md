@@ -7,8 +7,14 @@
 
 ***
 
-## 一. 插件接口说明
-### 1.1 plugin生命周期
+## 一. 插件安装
+微信公众平台添加插件"智联公寓"，提交申请，等待审核即可。
+![链接](./install-1.png)
+![链接](./install-2.png)
+
+***
+## 二. 插件接口说明
+### 2.1 plugin生命周期
 plugin的生命周期，与小程序App生命周期同步
   * **onLaunch()**
     > 同App.onLaunch,**必须调用**
@@ -17,7 +23,7 @@ plugin的生命周期，与小程序App生命周期同步
   * **onHide()**
     > 同App.onLaunch,**必须调用**
     
-### 1.2 登录注册
+### 2.2 登录注册
   * **setLoginOnLaunchOption(options)**
     > **必须在pages/login/login.js的onLoad方法中调用，并传入options参数**
   * **checkSession()**
@@ -35,9 +41,9 @@ plugin的生命周期，与小程序App生命周期同步
     nickName: "柳暗花明",gender: 1,avatarUrl: "https://wx.qlogo.cn/mmopen/vi_32132"}
     > 传入success和fail回调，返回是否注册成功！
 ***
-## 二. 小程序配置示例
-
-### 2.1 app.json
+## 三. 小程序配置示例
+GitHub示例代码https://github.com/TennisAndy/SmartLink-PluginDemo.git
+### 3.1 app.json
 请在小程序app.json中，配置插件版本以及引用插件自带的组件。
 ```
   "plugins": {
@@ -51,7 +57,7 @@ plugin的生命周期，与小程序App生命周期同步
     "multiSelector": "plugin://myPlugin/multiSelector"
   }
 ```
-### 2.2 app.js
+### 3.2 app.js
 请在小程序app.js中，调用插件的生命周期函数。
 ```
 var plugin = requirePlugin("myPlugin")
@@ -67,7 +73,7 @@ App({
   }
 })
 ```
-### 2.3 实现login Page
+### 3.3 实现login Page
 请在小程序中，新建页面pages/login/login，完成登陆逻辑。
 
 加载插件
